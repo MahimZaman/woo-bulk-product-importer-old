@@ -1,0 +1,136 @@
+#wp-admin-bar-wbpi-import-progress {
+  display: flex !important;
+
+  align-items: center !important;
+}
+
+#wp-admin-bar-wbpi-import-progress .ab-item {
+  display: flex !important;
+
+  align-items: center !important;
+
+  height: auto !important;
+
+  padding: 0 !important;
+
+  line-height: 1 !important;
+
+  background: transparent !important;
+}
+
+.wbpi-loader-wrap {
+  margin-top: 4px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  transform-origin: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px !important;
+  width: auto !important;
+}
+
+.wbpi-loader-wrap:hover {
+  transform: scale(1.03);
+}
+
+.wbpi-loader-wrap.processing {
+  background: rgba(255, 193, 7, 0.1) !important;
+
+  border: 1px solid #ffc107;
+}
+
+.wbpi-loader-wrap.completed {
+  background: #11311f;
+
+  border: 1px solid rgba(0, 208, 132, 0.2);
+}
+
+.wbpi-loader-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+  gap: 6px;
+}
+
+.wbpi-loader-status {
+  color: #fff;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.wbpi-loader-percent {
+  color: #a7aaad;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+.wbpi-loader-wrap.completed .wbpi-loader-percent {
+  color: #00d084;
+}
+
+.wbpi-loader-bar {
+  width: 100%;
+
+  height: 8px;
+
+  background: #2d3338;
+
+  border-radius: 999px;
+
+  overflow: hidden;
+
+  margin-bottom: 8px;
+}
+
+.wbpi-loader-progress {
+  height: 100%;
+
+  border-radius: 999px;
+
+  transition: width 0.4s ease;
+
+  background: linear-gradient(90deg, #2271b1, #00a0d2);
+}
+
+.wbpi-loader-wrap.completed .wbpi-loader-progress {
+  background: linear-gradient(90deg, #00a32a, #00d084);
+}
+
+.wbpi-loader-text {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 10px;
+
+  color: #c3c4c7;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+.wbpi-loader-wrap.completed .wbpi-loader-text {
+  color: #b7f7d8;
+}
+
+.wbpi-loader-failed {
+  margin-top: 7px;
+
+  color: #ff8080;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
